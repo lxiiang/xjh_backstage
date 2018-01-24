@@ -1,0 +1,39 @@
+/*背包数量样式*/
+.number{right:5px;top:-5px;width:26px;height:26px;line-height:26px;text-align:center;border-radius:50%;background:red;color:#fff;}
+
+.alert_bg{position:fixed;width:100%;height:100%; top:0;left:0;background:rgba(52,52,52,0.5);z-index:99;display:none;}
+.alert_tc{background:url(../image/tanchu.png); background-size:100% 100%; left:10%; top:140px; height:300px;}
+.alert_bg1{position:fixed;width:100%;height:100%; top:0;left:0;background:rgba(52,52,52,0.5);z-index:6;display:none;}
+.alert_bg2{position:fixed;width:100%;height:100%; top:0;left:0;background:rgba(52,52,52,0.5);z-index:6;display:none;}
+.alert_bg1 .alert_tc{background:url(../image/tanchu.png); background-size:100% 100%; left:10%; top:140px; height:337px;}
+.alert_bg2 .alert_tc{background:url(../image/tanchu.png); background-size:100% 100%; left:10%; top:140px; height:300px;}
+.jiu{left:0;right:0;margin:auto; top:-75px;}
+
+.alert_xiala{height: 34px;left: 5%;font: 15px/32px "微软雅黑";padding-left: 15px;
+color: #FFF;border-radius: 10px;border:2px solid #0466b3; background: #2093ec;}
+.alert-lg a{color: white;}
+.alert_xiala img{width: 15%;height: 100%;}
+.alert_xiala_deepblue{background: #2093EC;}
+.alert_xiala_qianblue{background: #0466b3;}
+.alert_tc  ul {width: 100%;margin: 0;top:30px;left: 0;
+padding: 0;z-index: 2;
+border-radius:0 0 5px 5px ;
+-moz-box-shadow:2px 2px 5px #333333; 
+-webkit-box-shadow:2px 2px 5px #333333;
+ box-shadow:2px 2px 5px #333333;display: none;}
+
+.alert-lg{position:fixed;width: 100%;height: 100%;background: rgba(52,52,52,0.5);display: none;z-index: 6;}
+.alert-lg-blue{height: 374px;top: 100px;background: url(../image/tanchu.png);
+background-size: 100% 100%;left: 5%;}
+#pipei .alert-lg-white{height: 156px;border-radius:15px ;left: 4%;}
+#pipei1 .alert-lg-white{height: 156px;border-radius:15px ;left: 4%;}
+
+.line-height-30{line-height: 30px}
+
+
+/*提货/赠送弹窗*/
+.alert_tc p{color:#fff;margin:0;}
+
+
+/*好友列表字母*/
+.right_zm li{height:3vh;text-align:center;}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <link href="css/mui.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/aui.css"/>
+    <link rel="stylesheet" href="css/admin.css" />
+    <link rel="stylesheet" href="css/mui.picker.all.css">
+    <script src="js/jquery-1.8.2.min.js"></script>
+    <script src="js/mui.min.js"> </script>
+    <script src="js/mui.picker.all.js"></script>
+
+</head>
+<body style="background:#fff!important;">
+    <header class="mui-bar mui-bar-nav">
+        <a class="mui-icon mui-icon-undo mui-icon-left-nav mui-pull-left" href="admin.html"></a>
+        <h1 class="mui-title">更多查询</h1>
+    </header>
+    <div class="mui-content">
+        <div class="font-14 mui-text-center">
+            时间  <span  class="aui-pad-5 osex" style="background: #F2F2F2">2017-10-28</span>   至  <span  class="aui-pad-5 osex1" style="background: #F2F2F2">2017-11-28</span>
+        </div>
+        <p class="aui-pad-10  aui-color-white" style="background: #009AFD">2017年10月31日</p>
+        <ul class="mui-table-view">
+            <li class="mui-table-view-cell mui-media">
+                <img class="mui-media-object mui-pull-left" src="../images/shuijiao.jpg">
+                <div class="mui-media-body aui-col-4 fl">
+                    幸福
+                    <p class='mui-ellipsis aui-mar-t-10'>能和心爱的人一起睡觉</p>
+                </div>
+                <div class="aui-mar-t-15">9999元</div>
+                <div class="fr re " style="bottom: 20px">已售出</div>
+            </li>
+            <li class="mui-table-view-cell mui-media">
+                <img class="mui-media-object mui-pull-left" src="../images/shuijiao.jpg">
+                <div class="mui-media-body aui-col-4 fl">
+                    幸福
+                    <p class='mui-ellipsis aui-mar-t-10'>能和心爱的人一起睡觉</p>
+                </div>
+                <div class="aui-mar-t-15">9999元</div>
+                <div class="fr re " style="bottom: 20px">已售出</div>
+            </li>
+            <li class="mui-table-view-cell mui-media">
+                <img class="mui-media-object mui-pull-left" src="../images/shuijiao.jpg">
+                <div class="mui-media-body aui-col-4 fl">
+                    幸福
+                    <p class='mui-ellipsis aui-mar-t-10'>能和心爱的人一起睡觉</p>
+                </div>
+                <div class="aui-mar-t-15">9999元</div>
+                <div class="fr re " style="bottom: 20px">已售出</div>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
+<script>
+    document.querySelector('.osex').addEventListener("tap", function() {
+        var dtpicker = new mui.DtPicker({
+            type: "date", //设置日历初始视图模式
+            beginDate: new Date(1920, 04, 25), //设置开始日期
+            endDate: new Date(2017, 12, 25), //设置结束日期
+            labels: ['Year', 'Mon', 'Day'], //设置默认标签区域提示语
+        });
+        dtpicker.show(function(item) { //弹出列表并在里面写业务代码
+            var itemCallback =item.text
+            $('.osex').html(itemCallback);
+        });
+    });
+    document.querySelector('.osex1').addEventListener("tap", function() {
+        var dtpicker = new mui.DtPicker({
+            type: "date", //设置日历初始视图模式
+            beginDate: new Date(1920, 04, 25), //设置开始日期
+            endDate: new Date(2017, 12, 25), //设置结束日期
+            labels: ['Year', 'Mon', 'Day'], //设置默认标签区域提示语
+        });
+        dtpicker.show(function(item) { //弹出列表并在里面写业务代码
+            var itemCallback =item.text
+            $('.osex1').html(itemCallback);
+        });
+    });
+</script>

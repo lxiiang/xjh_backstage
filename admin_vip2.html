@@ -1,0 +1,117 @@
+
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<link href="css/mui.min.css" rel="stylesheet" />
+		<link rel="stylesheet" href="css/aui.css"/>
+		<link rel="stylesheet" href="css/admin.css" />
+		<script src="js/echarts.js"></script>
+	</head>
+	
+	<body style="background:#fff!important;">
+		<header class="mui-bar mui-bar-nav">
+		    <a class="mui-icon mui-icon-undo mui-icon-left-nav mui-pull-left" href="chat.html"></a>
+		    <h1 class="mui-title">代理商会员</h1>
+		</header>
+		<div class="mui-content" style="background:#fff!important;">
+			<div class="mui-row aui-mar-15 aui-pad-b-15 aui-border-b-gray">
+				<div class="mui-col-sm-3 mui-col-xs-3">
+					<h5 class="f14 aui-color-black">累计邀请</h5>
+					<div class="f30 aui-color-red">123人</div>
+				</div>
+				<div class="mui-col-sm-6 mui-col-xs-6">
+					<h5 class="f14 aui-color-black">您的邀请时间</h5>
+					<p>http://www.itbx.com</p>
+				</div>
+				<div class="mui-col-sm-3 mui-col-xs-3">
+					<img class="aui-col-7"src="images/erweima.png" alt="" />
+				</div>
+			</div>
+			
+			<div>
+				<h4 style="padding:0 0 5px 15px; ">会员列表</h4>
+				<table style="width:100%;text-align:center">
+					<tr>
+						<th >姓名</th>
+						<th>账户余额</th>
+						<th>充值记录</th>
+					</tr>
+					<tr>
+						<td>李逍遥</td>
+						<td>1234钱</td>
+						<td>2017-11-27 充值100钱</td>
+					</tr>
+					<tr>
+						<td >李逍遥</td>
+						<td>1234钱</td>
+						<td>2017-11-27 充值100钱</td>
+					</tr>
+					<tr>
+						<td >李逍遥</td>
+						<td>1234钱</td>
+						<td>2017-11-27 充值100钱</td>
+					</tr>
+				</table>
+				
+			</div>
+		</div>
+		
+	</body>
+
+<script>
+		option = {
+    title : {
+        text: '某楼盘销售情况',
+        subtext: '纯属虚构'
+    },
+    tooltip : {
+        trigger: 'axis'
+    },
+    legend: {
+        data:['意向','预购','成交']
+    },
+    toolbox: {
+        show : true,
+        feature : {
+            mark : {show: true},
+            dataView : {show: true, readOnly: false},
+            magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
+            restore : {show: true},
+            saveAsImage : {show: true}
+        }
+    },
+    calculable : true,
+    xAxis : [
+        {
+            type : 'category',
+            boundaryGap : false,
+            data : ['周一','周二','周三','周四','周五','周六','周日']
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value'
+        }
+    ],
+    series : [
+        {
+            name:'成交',
+            type:'line',
+            smooth:true,
+            itemStyle: {normal: {areaStyle: {type: 'default'}}},
+            data:[160, 120, 130, 130, 120, 260, 120]
+        }
+    ]
+};
+ //初始化echarts实例
+    var myChart = echarts.init(document.getElementById('chartmain'));
+
+    //使用制定的配置项和数据显示图表
+    myChart.setOption(option);
+	</script>
+
+</html>

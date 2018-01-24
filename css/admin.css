@@ -1,0 +1,40 @@
+.border-darkgray{border:1px solid darkgray}
+.line-height-2{line-height: 2}
+.line-height-3{line-height:3}
+.aui-deepblue{background:#0089D3}
+.aui-lightblue{background:#4AB3FF}
+.admin_btn ul li{float:left;width:46%;margin:2%;padding:10px;background:#009EF7;color:#fff;}
+.admin_btn ul li a{color:#fff;}
+.admin_btn img{width:40px;}
+table th{background:#f0f0f0;line-height:2;}
+table td{line-height:2;color:#969696;}
+.tixian li{line-height:4;margin-bottom:10px;background:#fff;border:1px solid darkgray;}
+.grade td{border:1px solid darkgray;}
+.bank li{box-shadow:0 0 5px rgba(0,0,0,0.5);}
+.bank li img{border-radius:50%;}
+.bank_blue{background:#3776BF;}
+.bank_red{background:#EB5760;}
+.unbind_success{position:fixed;top:40%;left:0;right:0;margin:auto;background:rgba(0,0,0,0.5);padding:30px;display:none;}
+.saixuan button{width:50%;background:#F5F5F5;line-height: 3;border:none;}
+.time_line{width:1px;height:100%;background:#ddd;left:18%;}
+/*小左*/
+
+button{margin: -3px;}
+.vip_btn{width: 96px}
+.font-58{font: 16px/58px "微软雅黑"}
+.font-48{font: 16px/48px "微软雅黑"}
+.font-20{font: 20px/48px "微软雅黑"}
+.mui-row p{margin: 0;border-top: 0;border-bottom: 0}
+.font-14{font: 14px/58px "微软雅黑"}
+/*小厮*/
+.aui-pad-r-45{
+    padding-right:45px;
+}
+.xinxiID{padding:20px 0px 10px; margin:0 15px ;}
+.daili{ margin:5px 15px 0; }
+.shouchu_cx{ height: 45px; line-height: 45px;}
+.shouchu_cot{ height:60px; line-height:25px; font-size:20px; margin-bottom:15px;}
+.shouchu_date{ clear:both; width: 100%; padding-left: 10px;; height:35px; line-height:35px; color:white; background-color:#007AFF;}
+.shouchu_time{padding-top:22px;}
+.shouchu_time p{font: 16px/20px ""; }
+/*亚洲*/
